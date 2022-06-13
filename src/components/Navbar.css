@@ -37,7 +37,7 @@
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
+    grid-gap: 0px;
     list-style: none;
     text-align: center;
     width: 68vw; /* Modify this if modifying items in navigation bar */
@@ -84,15 +84,18 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 50vh;
+      height: auto;
       position: absolute;
-      top: 80px;
-      left: -100%;
+      top: 100%;
+      left: -120%;
       opacity: 1;
       transition: all 0.5s ease;
     }
   
     .nav-menu.active {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      padding-left: 0px;
       background: #242222;
       left: 0;
       opacity: 1;
@@ -102,9 +105,9 @@
   
     .nav-links {
       text-align: center;
-      padding: 2rem;
+      padding: 0;
       width: 100%;
-      display: table;
+      display: grid;
     }
   
     .nav-links:hover {
@@ -114,10 +117,11 @@
     }
   
     .navbar-logo {
+      margin-left: 0px;
       position: absolute;
       top: 0;
       left: 0;
-      transform: translate(25%, 50%);
+      transform: translate(6%, 50%);
     }
   
     .menu-icon {
