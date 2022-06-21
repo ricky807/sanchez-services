@@ -13,7 +13,7 @@ function Navbar() {
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                     <img src={logo} style={{ maxWidth: "134px", height: "auto" }} alt="logo"/>
                     </Link>
 
