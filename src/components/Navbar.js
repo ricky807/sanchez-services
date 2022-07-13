@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from "./Landscaping.jpg";
 import './Navbar.css';
 
 function Navbar() {
@@ -13,8 +12,8 @@ function Navbar() {
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo">
-                    <img src={logo} style={{ maxWidth: "134px", height: "auto" }} alt="logo"/>
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                    <img src="/images/Landscaping.jpg" style={{ maxWidth: "134px", height: "auto" }} alt="logo"/>
                     </Link>
 
                     <div className='menu-icon' onClick={handleClick}>
